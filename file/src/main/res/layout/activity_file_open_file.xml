@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+
+        <cn.xxt.commons.widget.IconFontTextView
+            android:id="@+id/iftv_top_left"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="@dimen/margin_edge"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:textSize="24dp"
+            android:text="@string/iconfont_back"
+            android:textColor="@color/stress_text"/>
+
+        <cn.xxt.commons.widget.AlwaysMarqueeTextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="文件名"
+            android:textColor="@color/stress_text"
+            android:textSize="20sp"/>
+
+        <cn.xxt.commons.widget.IconFontTextView
+            android:id="@+id/iftv_top_cancel"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="@dimen/margin_edge"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:textSize="20sp"
+            android:text="取消"
+            android:textColor="@color/stress_text"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/normal_divider_line"
+        android:layout_below="@+id/top_bar"/>
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"/>
+
+</RelativeLayout>

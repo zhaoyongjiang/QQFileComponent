@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--word图标-->
+    <string name="iconfont_word">&#xe6da;</string>
+    <!--excel图标-->
+    <string name="iconfont_excel">&#xe6ea;</string>
+    <!--ppt图标-->
+    <string name="iconfont_ppt">&#xe6eb;</string>
+    <!--pdf图标-->
+    <string name="iconfont_pdf">&#xe6ec;</string>
+    <!--txt图标-->
+    <string name="iconfont_txt">&#xe6ed;</string>
+    <!--zip图标-->
+    <string name="iconfont_zip">&#xe6f7;</string>
+    <!--audio图标-->
+    <string name="iconfont_auido">&#xe6db;</string>
+    <!--video图标-->
+    <string name="iconfont_video">&#xe6f6;</string>
+    <!--unknown图标-->
+    <string name="iconfont_unknown">&#xe6f1;</string>
+    <!--other图标-->
+    <string name="iconfont_other">&#xe6f2;</string>
+    <!--删除-->
+    <string name="iconfont_delete">&#xe6e8;</string>
+    <!--下载-->
+    <string name="iconfont_download">&#xe6e7;</string>
+    <!--分享-->
+    <string name="iconfont_share">&#xe6e6;</string>
+</resources>

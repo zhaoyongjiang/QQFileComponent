@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="选择文件"
+            android:onClick="toSelectFile"/>
+
+
+        <Button
+            android:id="@+id/btn_manage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="管理文件"
+            android:onClick="toManageFile"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:onClick="openFile">
+
+            <cn.xxt.file.ui.view.FileCornerImageView
+                android:id="@+id/ri_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_file_iv_corner"
+                android:src="@drawable/bg_placeholder_loading"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/cb_file"
+                android:layout_toRightOf="@+id/cb_file"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/ri_image"
+                android:layout_toLeftOf="@+id/rl_file_oper"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="filename"
+                    android:textColor="@color/stress_text"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:text="filesize"
+                    android:textColor="@color/normal_minor_text"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:text="fileupdatetime"
+                    android:textColor="@color/normal_minor_text"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

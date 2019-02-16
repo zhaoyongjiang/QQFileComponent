@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <gradient
+        android:centerColor="@color/weaken_divider_block_with_text"
+        android:endColor="@color/weaken_divider_block_with_text"
+        android:startColor="@color/weaken_divider_block_with_text"
+        android:type="linear"/>
+    <size android:height="1px"/>
+
+</shape>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.xxt.commons.widget.IconFontTextView
+        android:id="@+id/iftv_file_icon"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/iconfont_word"
+        android:textSize="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@+id/iftv_file_icon"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:text="文件名.xxx"
+        android:textSize="14dp"
+        android:textColor="@color/stress_text"/>
+
+    <TextView
+        android:id="@+id/tv_file_status_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="40dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:text="请先下载"
+        android:textSize="14sp"
+        android:textColor="@color/normal_minor_text" />
+
+    <RelativeLayout
+        android:id="@+id/rl_file_oper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_file_status_description"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/blue_zxkc"
+            android:text="@string/down_size"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_ready_download"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/tab_gray"
+            android:text="@string/ready_download"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pb_download"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:background="@color/normal_divider_block_text"
+                android:max="100"
+                style="@style/StyleProgressBar"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <cn.xxt.commons.widget.IconFontTextView
+                android:id="@+id/iftv_cancel"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/iconfont_cross"
+                android:textColor="@color/material_red"
+                android:textSize="24dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

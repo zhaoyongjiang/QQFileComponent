@@ -1,0 +1,150 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+//        classpath 'com.github.triplet.gradle:play-publisher:1.1.4'
+
+        //noinspection GradleDynamicVersion
+        // 无法下载到，暂时注释
+        // classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "http://jitpack.io" }
+        maven { url "http://192.168.6.252:8081/nexus/content/repositories/public/" }
+        flatDir dirs: "../commons/libs"
+        google()
+    }
+}
+
+ext {
+    minSdkVersion = 16
+    targetSdkVersion = 25
+    compileSdkVersion = 27
+    buildToolsVersion = '28.0.3'
+    sourceCompatibilityVersion = JavaVersion.VERSION_1_7
+    targetCompatibilityVersion = JavaVersion.VERSION_1_7
+
+    // 依赖的jar/aar版本定义
+//    final PLAY_SERVICES_VERSION = '8.4.0'
+    final SUPPORT_LIBRARY_VERSION = '27.1.1'
+    final RETROFIT_VERSION = '2.4.0'
+    final DAGGER_VERSION = '2.16'
+    final DEXMAKER_VERSION = '1.4'
+    final HAMCREST_VERSION = '1.3'
+    final ESPRESSO_VERSION = '2.2.2'
+    final RUNNER_VERSION = '0.5'
+    final RXJAVA_VERSION = '1.3.8'
+    final RXJAVAANDROID_VERSION = '1.2.1'
+    final RXBINDING_VERSION = '1.0.1'
+    final RXLIFECYCLE_VERSION = '1.0'
+    final BUTTERKNIFE_VERSION = '8.8.1'
+
+    deps = [
+//            playServicesGcm : "com.google.android.gms:play-services-gcm:$PLAY_SERVICES_VERSION",
+//SDK
+appcompatV7: "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION",
+gridLayoutV7: "com.android.support:gridlayout-v7:$SUPPORT_LIBRARY_VERSION",
+supportV4: "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION",
+recyclerviewV7: "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION",
+
+supportAnnotations: "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION",
+design: "com.android.support:design:$SUPPORT_LIBRARY_VERSION",
+percentlayout:"com.android.support:percent:$SUPPORT_LIBRARY_VERSION",
+espressoContrib: "com.android.support.test.espresso:espresso-contrib:$ESPRESSO_VERSION",
+espressoCore: "com.android.support.test.espresso:espresso-core:$ESPRESSO_VERSION",
+runner: "com.android.support.test:runner:$RUNNER_VERSION",
+rules: "com.android.support.test:rules:$RUNNER_VERSION",
+multidex:"com.android.support:multidex:1.0.1",
+constraintLayout:'com.android.support.constraint:constraint-layout:1.1.3',
+
+//jcenter
+picasso: 'com.squareup.picasso:picasso:2.71828',
+sqlbrite: 'com.squareup.sqlbrite:sqlbrite:1.1.2',
+retrofit: "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION",
+converterGson: "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION",
+adapterRxjava: "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION",
+otto: 'com.squareup:otto:1.3.8',
+okhttp:'com.squareup.okhttp3:okhttp:3.11.0',
+
+rxbinding: "com.jakewharton.rxbinding:rxbinding:$RXBINDING_VERSION",
+rxbindingV7: "com.jakewharton.rxbinding:rxbinding-appcompat-v7:$RXBINDING_VERSION",
+rxbindingV4: "com.jakewharton.rxbinding:rxbinding-support-v4:$RXBINDING_VERSION",
+rxbindingRecyclerview: "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$RXBINDING_VERSION",
+butterknife: "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION",
+butterknifeCompiler: "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION",
+//            timber: 'com.jakewharton.timber:timber:2.4.2',
+
+rxlifecycle: "com.trello:rxlifecycle:$RXLIFECYCLE_VERSION",
+rxlifecycleComponents: "com.trello:rxlifecycle-components:$RXLIFECYCLE_VERSION",
+rxlifecycleAndroid: "com.trello:rxlifecycle-android:$RXLIFECYCLE_VERSION",
+
+daggerCompiler: "com.google.dagger:dagger-compiler:$DAGGER_VERSION",
+dagger:  "com.google.dagger:dagger:$DAGGER_VERSION",
+guava: 'com.google.guava:guava:25.1-android',
+
+dexmaker: "com.crittercism.dexmaker:dexmaker:$DEXMAKER_VERSION",
+dexmakerDx: "com.crittercism.dexmaker:dexmaker-dx:$DEXMAKER_VERSION",
+dexmakerMockito: "com.crittercism.dexmaker:dexmaker-mockito:$DEXMAKER_VERSION",
+
+flycoTabLayout: 'com.flyco.tablayout:FlycoTabLayout_Lib:2.2.0@aar',
+connectionclass: 'com.facebook.network.connectionclass:connectionclass:1.0.1',
+imageloader: 'com.nostra13.universalimageloader:universal-image-loader:1.9.5',
+swipe:'com.daimajia.swipelayout:library:1.2.0@aar',
+progresshud: 'com.kaopiz:kprogresshud:1.1.0',
+commonPullToRefresh: 'com.chanven.lib:cptr:1.1.0',
+smartRefresh: 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4',
+systembartint: 'com.readystatesoftware.systembartint:systembartint:1.0.4',
+commonsValidator: 'commons-validator:commons-validator:1.6',
+
+sqlcipher:'net.zetetic:android-database-sqlcipher:3.5.7@aar',
+
+rxpermissions: 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar',
+
+httputils: 'com.zhy:okhttputils:2.6.2',
+
+hamcrestCore: "org.hamcrest:hamcrest-core:$HAMCREST_VERSION",
+hamcrestLibrary: "org.hamcrest:hamcrest-library:$HAMCREST_VERSION",
+hamcrestIntegration: "org.hamcrest:hamcrest-integration:$HAMCREST_VERSION",
+
+mockito: "org.mockito:mockito-core:2.9.0",
+robolectric: 'org.robolectric:robolectric:3.8',
+javaxAnnotation: 'org.glassfish:javax.annotation:3.1.1',
+
+rxandroid: "io.reactivex:rxandroid:$RXJAVAANDROID_VERSION",
+rxjava: "io.reactivex:rxjava:$RXJAVA_VERSION",
+
+parallaxviewpager: 'cn.yangbingqiang.android:parallaxviewpager:1.0.1',
+
+junit: "junit:junit:4.12",
+commonsCodec: 'commons-codec:commons-codec:1.10',
+
+fragmentation: "me.yokeyword:fragmentation:1.3.6",
+fragmentation_core: "me.yokeyword:fragmentation-core:1.3.6",
+
+//https://jitpack.io github-project
+jsbridge: 'com.github.lzyzsd:jsbridge:1.0.4',
+photoview: 'com.github.chrisbanes:PhotoView:2.1.4',
+spinkit: 'com.github.ybq:Android-SpinKit:1.1.0',
+recyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46',
+magicIndicator: 'com.github.hackware1993:MagicIndicator:1.5.0',
+pandora:'com.github.whataa:pandora:v1.0.6',
+pandoraNoOp :'com.github.whataa:pandora-no-op:v1.0.6',
+typeBuilder: 'com.github.ikidou:TypeBuilder:1.0',
+customPopWindow: 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1',
+okDownload: 'com.liulishuo.okdownload:okdownload:1.0.5',
+okDownload_sqlite: 'com.liulishuo.okdownload:sqlite:1.0.5',
+okDownload_okhttp: 'com.liulishuo.okdownload:okhttp:1.0.5',
+progressmanager: 'me.jessyan:progressmanager:1.5.0',
+
+pdfView: 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar',
+    ]
+
+}

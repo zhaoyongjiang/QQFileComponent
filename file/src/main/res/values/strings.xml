@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AndroidFileManage</string>
+    <string name="size">已选%1$s</string>
+    <string name="send">发送(%1$s)</string>
+    <string name="count">共%1$s个文件</string>
+
+    <string name="file_unvailible">原文件已失效，无法查看</string>
+    <string name="down_size">下载(%1$s)</string>
+    <string name="ready_download">准备下载</string>
+
+    <string name="cancel">取消</string>
+
+    <string name="file_size">%1$s</string>
+
+    <!-- Application级别SharedPreferences key -->
+    <string name="file_commons_sp_file_name">file_commons_sp_file_name</string>
+    <string name="file_commons_sp_config_map">file_commons_sp_config_map</string>
+</resources>

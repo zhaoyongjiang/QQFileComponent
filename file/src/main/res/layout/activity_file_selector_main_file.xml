@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/rl_file_selector_main_view">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/main_top_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/top_rg_recent"
+                android:layout_width="76dp"
+                android:layout_height="29dp"
+                android:background="@drawable/top_r_bg"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="最近"
+                android:textColor="@drawable/top_r_text"
+                android:textColorHighlight="@color/white"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/top_rg_local"
+                android:layout_width="76dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="-1dp"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="本机"
+                android:background="@drawable/top_r_bg"
+                android:textColor="@drawable/top_r_text"
+                android:textColorHighlight="@color/white"
+                android:textSize="14dp" />
+
+            // FIXME TEST_TAG 添加人: zyj 添加日期: 2018/12/17 上午11:35 描述：(测试标签，正式发布需去除)
+            //fixme 备注：暂时只有本机。待有最近/本机时候。需要使用下面配置
+            <!--android:background="@drawable/top_r_bg"-->
+            <!--android:textColor="@drawable/top_r_text"-->
+            <!--android:textColorHighlight="@color/white"-->
+            <!--android:textSize="14dp"-->
+        </RadioGroup>
+
+        <cn.xxt.commons.widget.IconFontTextView
+            android:id="@+id/iftv_top_right"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_edge"
+            android:gravity="right|center_vertical"
+            android:text="@string/cancel"
+            android:textColor="@color/stress_text"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/normal_divider_line"/>
+
+    </RelativeLayout>
+
+    <cn.xxt.file.ui.view.FileSelectorMainViewPager
+        android:id="@+id/file_selector_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#e6e5e5">
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_tv_send"
+            android:padding="5dp"
+            android:text="预览"
+            android:textColor="@color/normal_minor_btn"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_all_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/tv_preview"
+            android:layout_toRightOf="@+id/tv_preview"
+            android:text="@string/size"
+            android:textColor="@color/normal_minor_text"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_tv_send"
+            android:padding="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/send"
+            android:textColor="@color/normal_minor_text"
+            android:textSize="14dp"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+</LinearLayout>

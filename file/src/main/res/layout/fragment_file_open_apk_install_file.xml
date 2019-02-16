@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.xxt.commons.widget.IconFontTextView
+        android:id="@+id/iftv_file_icon"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/iconfont_unknown"
+        android:textSize="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@+id/iftv_file_icon"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:text="xxx.apk"
+        android:textSize="14dp"
+        android:textColor="@color/stress_text"/>
+
+    <TextView
+        android:id="@+id/tv_file_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_file_name"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/file_size"
+        android:textSize="14sp"
+        android:textColor="@color/normal_minor_text"/>
+
+    <Button
+        android:id="@+id/btn_install"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_file_size"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@color/blue_zxkc"
+        android:text="安装"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/normal_minor_text"
+        android:text="此为可执行文件，安装可能有安全风险，请谨慎操作"/>
+
+</RelativeLayout>

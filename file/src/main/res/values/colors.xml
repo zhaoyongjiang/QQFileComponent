@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_e5e5e5">#E5E5E5</color>
+
+    <!--文件图标颜色-->
+    <color name="color_word">#4e81e5</color>
+    <color name="color_excel">#00d1a4</color>
+    <color name="color_ppt">#e54545</color>
+    <color name="color_pdf">#f54335</color>
+    <color name="color_txt">#7aacfc</color>
+    <color name="color_zip">#efce4a</color>
+    <color name="color_other">#4391f5</color>
+    <color name="color_unknown">#cccccc</color>
+    <color name="color_audio">#13ae67</color>
+    <color name="color_video">#67a8ef</color>
+
+</resources>

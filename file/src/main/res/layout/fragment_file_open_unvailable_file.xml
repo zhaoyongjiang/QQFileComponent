@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.xxt.commons.widget.IconFontTextView
+        android:id="@+id/iftv_file_icon"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/iconfont_unknown"
+        android:textSize="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@+id/iftv_file_icon"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:text="未知文件"
+        android:textSize="14dp"
+        android:textColor="@color/stress_text"/>
+
+    <TextView
+        android:id="@+id/tv_file_unvailible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_file_name"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/file_unvailible"
+        android:textSize="14dp"
+        android:textColor="@color/normal_minor_text"
+        android:visibility="visible"/>
+
+</LinearLayout>

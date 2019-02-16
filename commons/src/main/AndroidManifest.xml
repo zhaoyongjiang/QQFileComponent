@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xxt.commons">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".ui.image.ImageShowActivity" />
+
+        <activity android:name=".ui.image.ImageChooseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.base.TranslucentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- =================7.0上读取文件========================== -->
+        <!--参考资料https://blog.csdn.net/lmj623565791/article/details/72859156-->
+        <!--authorities：{app的包名}.provider
+        grantUriPermissions：必须是true，表示授予 URI 临时访问权限
+        exported：必须是false
+        resource：中的@xml/provider_paths是我们接下来要添加的文件-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"  >
+
+    <cn.xxt.commons.widget.IconFontTextView
+        android:id="@+id/iftv_top_left"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="@dimen/margin_edge"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left|center_vertical"
+        android:textSize="24dp"
+        android:text="@string/iconfont_back"
+        android:textColor="@color/stress_text"
+        android:visibility="gone"/>
+
+    <cn.xxt.commons.widget.AlwaysMarqueeTextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/stress_text"
+        android:textSize="20sp"/>
+
+    <cn.xxt.commons.widget.IconFontTextView
+        android:id="@+id/iftv_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:minWidth="60dp"
+        android:layout_marginRight="@dimen/margin_edge"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:textSize="24dp"
+        android:text="@string/iconfont_more"
+        android:textColor="@color/stress_text"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_top_right"
+        android:layout_width="wrap_content"
+        android:minWidth="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_edge"
+        android:gravity="center"
+        android:textColor="@color/stress_text"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/im_social_dig_name_bg"/>
+</RelativeLayout>

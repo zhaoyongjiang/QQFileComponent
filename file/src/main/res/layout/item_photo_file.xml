@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xxt.file.ui.view.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <cn.xxt.commons.widget.RecyclerImageView
+            android:id="@+id/ri_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_placeholder_loading"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:id="@+id/v_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/half_trans_black"
+            android:visibility="gone"/>
+
+        <cn.xxt.file.ui.view.CheckBox
+            android:id="@+id/cb_file"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:border_color="@color/stress_clickable"
+            app:checkbox_color="@color/stress_clickable"
+            app:checkbox_size="24dp"
+            app:checked_drawable="@drawable/ic_file_album_tick_white"
+            app:unchecked_color="@color/white"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</cn.xxt.file.ui.view.MyRelativeLayout>

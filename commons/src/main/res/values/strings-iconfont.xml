@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--顶部标题栏返回图标-->
+    <string name="iconfont_back">&#xe75a;</string>
+    <!--顶部标题栏更多图标（三个点）-->
+    <string name="iconfont_more">&#xe798;</string>
+    <!--顶部标题栏更多图标（三个点横着）-->
+    <string name="iconfont_more1">&#xe601;</string>
+    <!--向下箭头-->
+    <string name="iconfont_arrow_down">&#xe620;</string>
+    <!--叉号图标-->
+    <string name="iconfont_cross">&#xe600;</string>
+    <!--未选择图标-->
+    <string name="iconfont_not_choosed">&#xe60e;</string>
+    <!--选中图标（fill）-->
+    <string name="iconfont_choosed_fill">&#xe61d;</string>
+    <!--向右箭头-->
+    <string name="iconfont_arrow_right">&#xe603;</string>
+    <string name="iconfont_camera">&#xe634;</string>
+</resources>

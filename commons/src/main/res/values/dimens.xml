@@ -1,0 +1,39 @@
+<resources>
+    <!--用在导航栏标题：如导航标题、分类名称等-->
+    <dimen name="stress_nav_title_size">20sp</dimen>
+    <!--用在一些重要的文字内容标题以及正文-->
+    <dimen name="stress_primary_content_and_title_size">16sp</dimen>
+
+    <!--用于次级正文,一般按钮文字：特别适用于大段文字-->
+    <dimen name="normal_minor_content_and_title_and_btn_size">14sp</dimen>
+    <!--用于补充标题字幕说明文字：如日期等-->
+    <dimen name="normal_explain_content">12sp</dimen>
+
+    <!--用于提示图标上文字：如导新题提示图标-->
+    <dimen name="weak_tip_on_btn">10sp</dimen>
+
+    <!--列表一行的常用高度-->
+    <dimen name="item_height">44dp</dimen>
+
+    <!--紧凑型的行高-->
+    <dimen name="item_height_forty">40dp</dimen>
+
+    <!--边缘常用的margin-->
+    <dimen name="margin_edge">16dp</dimen>
+
+    <dimen name="margin_eight">8dp</dimen>
+
+    <!--item中向右箭头大小-->
+    <dimen name="item_arrow_size">16dp</dimen>
+
+    <dimen name="max_image_size">1024px</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="imgsave_float_button_margin">16dp</dimen>
+
+    <dimen name="image_horizontal_size">90dp</dimen>
+
+    <dimen name="image_horizontal_blank_size">80dp</dimen>
+</resources>

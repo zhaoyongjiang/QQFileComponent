@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_bt_status_vailible" android:state_enabled="true"/>
+    <item android:drawable="@drawable/shape_bt_status_unvailible" android:state_enabled="false"/>
+</selector>

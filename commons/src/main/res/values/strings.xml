@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">zyj</string>
+
+    <string name="choose">选择</string>
+
+    <string name="back">返回</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="empty">empty</string>
+    <string name="save">保存</string>
+    <string name="commons_tip">提示</string>
+    <string name="commons_search">搜索</string>
+    <string name="commons_commit">提交</string>
+    <string name="select_all">全选</string>
+    <string name="un_select_all">全不选</string>
+
+    <!-- Application级别SharedPreferences key -->
+    <string name="commons_sp_file_name">commons_sp_file_name</string>
+    <string name="commons_sp_key_web_id">commons_sp_key_web_id</string>
+    <string name="commons_sp_key_grade_id">commons_sp_key_grade_id</string>
+    <string name="commons_sp_key_bookversion">commons_sp_key_bookversion</string>
+    <string name="commons_sp_key_section_id">commons_sp_key_section_id</string>
+    <string name="commons_sp_key_visit_flag">commons_sp_key_visit_flag</string>
+    <string name="commons_sp_key_app_tag">commons_sp_key_app_tag</string>
+    <string name="commons_sp_key_refresh_grade_info_date">commons_sp_key_refresh_grade_info_date</string>
+    <string name="commons_sp_key_refresh_modulelist_flag">commons_sp_key_refresh_modulelist_flag</string>
+    <string name="commons_sp_key_refresh_notice_flag">commons_sp_key_refresh_notice_flag</string>
+
+    <string name="commons_sp_key_allow_net_mobile">micro_course_sp_key_allow_net_mobile</string>
+    <string name="commons_sp_key_allow_net_mobile_always">micro_course_sp_key_allow_net_mobile_always</string>
+
+    <string name="take_image">拍摄照片</string>
+    <string name="sdcard_disable">sd卡不可用，暂时无法使用此功能</string>
+
+    <string name="title_image_show">查看图片</string>
+    <string name="saving_image">正在保存图片，请稍后</string>
+    <string name="save_image_failed">图片保存失败，请重试</string>
+
+    <string name="title_image_choose">选择图片</string>
+    <string name="build_image_list_failed">图片获取失败，请重试</string>
+
+    <string name="commons_connect_fail_and_retry">网络连接失败，请检查网络连接后，再次尝试</string>
+</resources>

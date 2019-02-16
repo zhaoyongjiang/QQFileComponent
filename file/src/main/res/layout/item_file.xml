@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.xxt.file.ui.view.CheckBox
+        android:id="@+id/cb_file"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        app:border_color="@color/normal_minor_btn"
+        app:checkbox_color="@color/stress_clickable"
+        app:checkbox_size="24dp"
+        app:checked_drawable="@drawable/ic_file_album_tick_white"
+        app:unchecked_color="@color/white"/>
+
+    <cn.xxt.file.ui.view.FileCornerImageView
+        android:id="@+id/ri_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_file_iv_corner"
+        android:src="@drawable/bg_placeholder_loading"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/cb_file"
+        android:layout_toRightOf="@+id/cb_file"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rl_file_oper"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/btn_look"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="查看"
+            android:textColor="@color/stress_text"
+            android:textSize="12dp"
+            android:background="@drawable/selector_bt_status"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="下载"
+            android:textColor="@color/stress_text"
+            android:textSize="12dp"
+            android:background="@drawable/selector_bt_status"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_unvailible"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="已失效"
+            android:textColor="@color/stress_text"
+            android:textSize="12dp"
+            android:background="@drawable/selector_bt_status"
+            android:enabled="false"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_downloading"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="下载中"
+            android:textColor="@color/stress_text"
+            android:textSize="12dp"
+            android:background="@drawable/selector_bt_status"
+            android:enabled="false"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_ready_download"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="准备下载"
+            android:textColor="@color/stress_text"
+            android:textSize="12dp"
+            android:background="@drawable/selector_bt_status"
+            android:enabled="false"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/ri_image"
+        android:layout_toLeftOf="@+id/rl_file_oper"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="kjgsakjgsadgfdsjkkjgsadgfdsjkkjgsadgfdsjkkjgsadgfdsjkdgfdsjk"
+            android:textColor="@color/stress_text"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:text="kjgsadgfdsjk"
+            android:textColor="@color/normal_minor_text"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:text="kjgsadgfdsjk"
+            android:textColor="@color/normal_minor_text"
+            android:textSize="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/pb_download"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:background="@color/normal_divider_block_text"
+            android:max="100"
+            style="@style/StyleProgressBar"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/monthly_bg_gray"/>
+</RelativeLayout>

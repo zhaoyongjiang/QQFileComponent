@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#222222</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="gray">#ffdfdfdf</color>
+    <color name="bg_main">#edf0ee</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider_homepage">#e9e9e9</color>
+    <color name="ttl_detail_gray">#f7f7f7</color>
+    <color name="transparent">#00000000</color>
+    <color name="new_text_black">#595757</color>
+    <color name="divider_gray">#D4D4D4</color>
+    <color name="new_text_blue">#33a0b3</color>
+    <color name="nav_background">#f7f7f7</color>
+    <color name="blue_zxkc">#329fed</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="snow">#fffafa</color>
+    <color name="black">#000000</color>
+    <color name="half_trans_black">#77000000</color>
+    <color name="tab_gray">#999999</color>
+    <color name="tab_selected">#27c675</color>
+    <color name="tab_not_selected">#999999</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="dark_black_gray">#505050</color>
+
+    <!--重要 小面积使用,用于标题栏和突出的文字、按钮和icon：如导航底色,可点击的文字-->
+    <color name="stress_clickable">#27c675</color>
+    <!--用于重要级文字信息、内页标题信息：如正文内容文字-->
+    <color name="stress_text">#222222</color>
+
+    <!--用于内容区分标题-->
+    <color name="normal_divider_block_text">#666666</color>
+    <!--用于辅助、次要的文字信息、导航灰色普通按钮描边-->
+    <color name="normal_minor_text">#999999</color>
+    <!--用于界面内小图标灰色按钮、如返回按钮等-->
+    <color name="normal_minor_btn">#c8c7cc</color>
+    <!--用于分割线,标签描边，列表按下去的效果-->
+    <color name="normal_divider_line">#d7d7d7</color>
+
+    <!--用于带内容的分割区域底色-->
+    <color name="weaken_divider_block_with_text">#eef0f2</color>
+    <!--用于不带内容的分割区域底色-->
+    <color name="weaken_divider_block">#f3f3f3</color>
+
+    <color name="xxt_primary_green">#27c675</color>
+
+    <color name="dialog_gray">#eeeeee</color>
+
+    <!--h5标题栏颜色-->
+    <color name="title_for_h5_green">#68c14a</color>
+    <color name="title_for_h5_blue">#3779d0</color>
+
+    <color name="material_red">#ffF44336</color>
+    <color name="monthly_bg_gray">#efefef</color>
+</resources>

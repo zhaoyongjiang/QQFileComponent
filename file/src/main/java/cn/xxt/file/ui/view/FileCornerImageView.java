@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 /**
  * Created by zyj on 2018/12/13.
  */
-public class FileCornerImageView extends android.support.v7.widget.AppCompatImageView {
+public class FileCornerImageView extends androidx.appcompat.widget.AppCompatImageView {
     //圆角弧度
     private float[] rids = {6.0f,6.0f,6.0f,6.0f,6.0f,6.0f,6.0f,6.0f,};
 

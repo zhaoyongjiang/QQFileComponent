@@ -3,8 +3,6 @@ package cn.xxt.file.ui.manager;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 
 import com.jakewharton.rxbinding.view.RxView;
@@ -15,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.xxt.commons.injection.ActivityContext;

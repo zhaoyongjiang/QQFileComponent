@@ -3,10 +3,6 @@ package cn.xxt.file.util;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -14,6 +10,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.fragment.app.Fragment;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.CursorLoader;
+import androidx.loader.content.Loader;
 import cn.xxt.file.internal.domain.FileDownloadStatusEnum;
 import cn.xxt.file.internal.domain.FileInfo;
 import cn.xxt.file.internal.domain.FileTypeEnum;

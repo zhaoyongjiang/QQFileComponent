@@ -2,13 +2,14 @@ package cn.xxt.library.ui.base;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.KeyEvent;
 
 import com.trello.rxlifecycle.components.support.RxFragment;
 
 import java.util.Iterator;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 
 public class BaseFragment extends RxFragment {

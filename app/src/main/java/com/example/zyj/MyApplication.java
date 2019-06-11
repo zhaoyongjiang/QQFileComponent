@@ -3,7 +3,6 @@ package com.example.zyj;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.multidex.MultiDex;
 import android.util.Log;
 
 import com.example.zyj.injection.component.ApplicationComponent;
@@ -11,6 +10,7 @@ import com.example.zyj.injection.component.DaggerApplicationComponent;
 import com.example.zyj.injection.module.ApplicationModule;
 import com.tencent.smtt.sdk.QbSdk;
 
+import androidx.multidex.MultiDex;
 import cn.xxt.commons.injection.base.BaseApplication;
 import cn.xxt.commons.util.SwitchOfHttps;
 import cn.xxt.file.api.FileComponent;

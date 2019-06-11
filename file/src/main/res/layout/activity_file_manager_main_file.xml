@@ -46,7 +46,7 @@
         android:layout_height="0.5dp"
         android:background="@color/normal_divider_line"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rlv_type"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

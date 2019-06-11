@@ -2,7 +2,6 @@ package cn.xxt.commons.ui.image;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import androidx.viewpager.widget.PagerAdapter;
 import cn.xxt.commons.R;
 import cn.xxt.commons.util.StringUtil;
 
